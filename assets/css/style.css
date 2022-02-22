@@ -226,10 +226,9 @@ img{
 .home__img{
   position: absolute;
   top: 18%;
-  left: 45%;
   right: 0;
   bottom: 50%;
-  width: 355px;
+  width: 300px;
 }
 
 @media (max-width : 768px){
