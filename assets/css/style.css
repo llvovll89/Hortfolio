@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 /*===== VARIABLES CSS =====*/
 :root{
   --header-height: 3rem;
@@ -8,7 +9,7 @@
 
 /*===== Colores =====*/
 :root{
-  --first-color: #4070F4;
+  --first-color: #6f86d6;
   --second-color: #0E2431;
 }
 
@@ -133,11 +134,11 @@ img{
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
+    width: 50%;
     height: 100%;
-    padding: 2rem;
+    padding: 6rem;
     background-color: var(--second-color);
-    transition: .5s;
+    transition: .7s ease;
   }
 }
 .nav__item{
@@ -149,6 +150,7 @@ img{
 }
 .nav__link:hover{
   position: relative;
+  text-shadow: 2px 2px 5px grey;
 }
 .nav__link:hover::after{
   position: absolute;
@@ -161,6 +163,10 @@ img{
 }
 .nav__logo{
   color: var(--second-color);
+  font-size: 18px;
+}
+.nav__logo:hover {
+  text-shadow: 2px 2px 6px grey;
 }
 .nav__toggle{
   color: var(--second-color);
@@ -195,9 +201,14 @@ img{
 .home__title{
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  font-family: 'Poor Story', cursive;
 }
 .home__title-color{
   color: var(--first-color);
+}
+.home__title-color:hover {
+  color: #2a5298;
+  text-shadow: 2px 2px 5px grey;
 }
 .home__social{
   display: flex;
@@ -214,10 +225,17 @@ img{
 }
 .home__img{
   position: absolute;
+  top: 18%;
   left: 45%;
   right: 0;
   bottom: 50%;
   width: 355px;
+}
+
+@media (max-width : 768px){
+  .home__img{
+    top: 15%;
+  }
 }
 
 /*BUTTONS*/
@@ -251,7 +269,9 @@ img{
   width: 200px;
   border-radius: 2rem;
 }
-
+.about__text {
+  line-height: 28px;
+}
 /* ===== SKILLS =====*/
 .skills__container{
   row-gap: 2rem;
@@ -404,7 +424,7 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--second-color);
+  background-color: #485563;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
