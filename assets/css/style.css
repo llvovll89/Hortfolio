@@ -138,7 +138,7 @@ img{
     width: 50%;
     height: 100%;
     padding: 6rem;
-    background-color: var(--second-color);
+    background-color: rgba(0, 0, 0, 0.3);
     transition: .7s ease;
   }
 }
@@ -218,6 +218,8 @@ img{
   background-image: url(../img/about-img.png);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: 25% 100%;
+  border-radius: 10px;
   z-index: -1;
 }
 @media (max-width: 768px) {
@@ -225,7 +227,8 @@ img{
     text-shadow: 3px 3px 3px whitesmoke;
   }
   .home__data::after {
-    opacity: .8;
+    opacity: .5;
+    background-size: 50% 100%;
   }
 }
 
