@@ -1,6 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
 /*===== VARIABLES CSS =====*/
 :root{
   --header-height: 3rem;
@@ -48,11 +49,15 @@
 
 /*===== BASE =====*/
 *,::before,::after{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 html{
   scroll-behavior: smooth;
 }
+
 body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
@@ -141,6 +146,13 @@ img{
     background-color: rgba(0, 0, 0, 0.3);
     transition: .7s ease;
   }
+  .work__img {
+    height: 350px;
+  }
+  .work__img img {
+    width: 100%;
+    object-fit: contain;
+  }
 }
 .nav > div {
   display: flex;
@@ -227,7 +239,7 @@ img{
     text-shadow: 3px 3px 3px whitesmoke;
   }
   .home__data::after {
-    opacity: .5;
+    opacity: .9;
     background-size: 50% 100%;
   }
 }
@@ -235,7 +247,7 @@ img{
 .home__title{
   font-size: 46px;
   margin-bottom: var(--mb-5);
-  font-family: 'Poor Story', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 .home__title-color{
   color: var(--first-color);
